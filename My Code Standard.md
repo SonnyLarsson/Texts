@@ -338,4 +338,4 @@ Use appropriately named variables to eliminate unexplained values.
 
 This document describes part of an approach to writing code that is easy to maintain and share. The basic concept is centered around the idea that code should explain itself to some extent. Ideally, a programmer should be able to read code and understand how it flows and functions without additional documentation.
 
-Of course, it takes more than just following a few guidelines to write truly great code. In the end, it also comes down to experience, following best practices a for a particular language, and more. These few guidelines won't solve all your problems, but I hope they will provide some inspiration.
+Of course, it takes more than just following a few guidelines to write truly great code. In the end, it also comes down to experience, following best practices for a particular language, and more. These few guidelines won't solve all your problems, but I hope they will provide some inspiration.
