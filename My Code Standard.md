@@ -39,7 +39,7 @@ Here are some common strategies for writing better, more self-explanatory code:
 
 ## Comment usage
 
-First off, let's delve deeper into when, and when not to use a comment. To start off, comments can't always be avoided, but they shouldn't replace legible code. So, if code can be rewritten to replace comments, do so. 
+First off, let's look at when, and when not to use a comment. To start off, comments can't always be avoided, but they shouldn't replace legible code. So, if code can be rewritten to replace comments, do so.
 
 Here are some examples of comment usage:
 
