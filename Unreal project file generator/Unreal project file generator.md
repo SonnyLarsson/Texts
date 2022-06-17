@@ -42,8 +42,11 @@ The third script—**choose_unreal_version_to_generate**—was created as *someo
   * config
   * generate_unreal_files_vscode
   * choose_unreal_version_to_generate
-* Setup
-* Usage
+* Recommended setup
+* How it works
+  * Automated project file generation for a single version of Unreal Engine
+  * Manual project file generation for a single version of Unreal Engine
+  * Manual project file generation with a choice between multiple versions of Unreal Engine
 
 
 <br>
