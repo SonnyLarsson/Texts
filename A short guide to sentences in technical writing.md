@@ -231,7 +231,7 @@ Note: Certain style guides for technical writing also recommend using strong ver
 
 ## Writing with flow
 
-Text without flow is hard to read. Repetitive text puts readers off. Likewise, text without *white space* becomes a wall of text. Finally, sentences without *transitions* may appear disconnected, as if the text jumps from topic to topic. Write text that flows well by varying language and connecting your sentences together.
+Text without flow is hard to read. Repetitive text puts readers off. Likewise, text without *white space* becomes a wall of text. Finally, sentences without *transitions* may appear disconnected, as if the text jumps from topic to topic. Write text that flows well by varying language and connecting your sentences together, but leave some room in between pieces of text to make it easier to read.
 
 Note: Prioritize understanding over flow. Always consider texts from the perspective of the intended readers. Don't use words or expressions your readers might not understand.  
 
