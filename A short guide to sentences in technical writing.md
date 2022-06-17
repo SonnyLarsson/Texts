@@ -344,7 +344,7 @@ Transitions tie clauses, sentences or paragraphs together while showing a relati
 Depending on your purposes, there are other ways to categorize transitions, but suffice it to say that transitions create a relationship between pieces of your text. Consider the following sentences:
 > I drove the car. My wife was at work.
 
-There's no relationship between these two sentences, just two people doing two different things. Add a transition the the second sentence to tie the sentences together:
+There's no relationship between these two sentences, just two people doing two different things. Add a transition to the second sentence to tie the sentences together:
 > I drove the car. Meanwhile, my wife was at work.
 
 Now, the two sentences are related in time. In fact, these two sentences can become one:
