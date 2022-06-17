@@ -1,6 +1,6 @@
 # A short guide to sentences in technical writing
 
-This guide contains one take on how to write technical texts.
+This guide contains one take on how to write technical texts, centered around sentence structure and how sentences relate to one another.
 
 <br>
 
@@ -8,7 +8,7 @@ This guide contains one take on how to write technical texts.
 
 Over the years, I've picked up a few ideas and concepts I find helpful when writing technical texts. Some of what I'm about to describe comes from style guides and courses in technical writing, while other parts come from trial-and-error. Read this guide to find out more about how *I* write.
 
-So, keep in mind that this text is subjective. This a description of one way—my way— of writing certain texts, not the only way to write. With that in mind, let's get going!
+So, keep in mind that this text is subjective. This a description of one way—my way—of writing certain texts, not the only way to write. With that in mind, let's get going!
 
 <br>
 
