@@ -247,11 +247,11 @@ The following list contains three possible strategies to reduce repetition in th
 
 **Use synonyms**:
 
-Synonyms are words that mean the same thing. For example, "big" and "large" If readers may mistake the synonym as a reference to a different entity you should not use a synonym. Use synonyms for a repeated word that isn't a technical term or a reference to something specific. 
+Synonyms are words that mean the same thing. For example, "big" and "large". Use synonyms for a repeated word that isn't a technical term or a reference to something specific. That said, if readers may mistake the synonym as a reference to a different entity you should not use a synonym.
 
 **Use pronouns**:
 
-Use third person pronouns instead of names or other identifiers. However, if there's any ambiguity on what a pronoun is a reference to, you should avoid the pronoun. Use pronouns close to what they are referring to; if there are more than five words between a pronoun and the noun or phrase the pronoun refers to, the pronoun may confuse readers. You should not use a third person to reference something that comes later in the text. 
+Use third person pronouns instead of names or other identifiers. Use pronouns close to what they are referring to; if there are more than five words between a pronoun and the noun or phrase the pronoun refers to, the pronoun may confuse readers. In fact, if there's any ambiguity on what a pronoun is a reference to, you should avoid the pronoun. Don't use a third person pronoun to reference something that comes later in the text.
 
 The following list contains a few examples of clear pronoun usage:
 
