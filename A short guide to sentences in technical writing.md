@@ -1,6 +1,6 @@
 # A short guide to sentences in technical writing
 
-This guide contains one take on how to write technical texts, centered around sentence structure and how sentences relate to one another.
+This guide contains one take on how to write technical texts. This take is centered around sentence structure and how sentences relate to one another.
 
 <br>
 
