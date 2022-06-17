@@ -51,11 +51,11 @@ Here are some examples of comment usage:
 * Organizing code
 * Telling a compiler what to do with code
 
-Comments have a way of sticking around longer than intended and when changes are made to the code, a comment may even become a liar. In all of the cases above, an outdated comment may become a problem. So, always keep comments up to date, or avoid comments entirely.
+Comments have a way of sticking around longer than intended. When changes are made to the code, a comment may even become a liar. In all of the cases above, an outdated comment may become a problem. So, always keep comments up to date, or avoid comments entirely.
 
-Sometimes, comments are hard to avoid. For example, some languages allow programmers to define if a snippet of code should be used in a specific build. Other comments are used for OpenApi generation. Some comments establish code ownership, or tell other programmers what they may do with your code. So, use comments that do more than just provide internal documentation.
+Sometimes, comments are hard to avoid. For example, some languages allow programmers to define if a snippet of code should be used in a specific build with conditional comments. Other comments are used for OpenApi generation. Some comments establish code ownership, or tell other programmers what they may do with your code. With that in mind, use comments that do more than just provide internal documentation.
 
-However, some comments *can* and should be avoided. See comments that only serve as information for yourself and other programmers as an indication that it might be time to refactor your code. So, when a comment only serves as documentation, consider replacing it with better code. 
+However, some comments *can* and should be avoided. See comments that only serve as information for yourself and other programmers as an indication that it might be time to refactor your code. In other words, when a comment only serves as documentation, consider replacing it with better code.
 
 > Writer's note: Now, that sweet ASCII rendition of Homer Simpson with a flame thrower? Maybe keep that comment. It might not add anything to the code, but we *should* be happy at work. Just keep the silly stuff at the end of a file, if you need it.
 
@@ -67,9 +67,18 @@ However, some comments *can* and should be avoided. See comments that only serve
 
 ## Clear identifiers
 
-An identifier is a name. Identifiers are used for namespaces, classes, functions and variables, and much more. Don't just use these names as a way of telling things apart. Consider identifiers as a way of communicating intent.
+An identifier is a way. Identifiers are used for namespaces, classes, functions and variables, and much more. Don't just use these names as a way of telling things apart. Consider identifiers as a way of communicating intent.
 
-For example, imagine a function used to **retrieve a value from a heat sensor**. Since the function is intended for checking heat level, **the function is called `cH()` for *Check Heat***. A comment above the function explains the purpose of cH().
+For example, imagine a function used to **retrieve a value from a heat sensor**. Since the function is intended for checking heat level, **the function is called `cH()` for *Check Heat***. A comment above the function explains the purpose of cH():
+
+```js
+// This function gets a value from the heat sensor.
+number cH() {
+   doSomeMagic();
+}
+```
+
+<br>
 
 **First, consider if ch() is a good function name.** As a general rule, the answer should be **"no"**. Homebrewed abbreviations is generally a bad idea in writing, as they force readers to translate them into words, and the same applies to code.
 
@@ -77,7 +86,7 @@ But, if the name of the function is descriptive, it's possible to **remove the n
 
 Of course, **a lot of naming comes down to code conventions and what your team has agreed on**. For example, if you're working with *getter* and *setter* functions, checkHeatSensor() could be turned into a `setHeatSensorValue()` that *sets* the value from the heat sensor to a `HeatSensorValue` *property*. Then, *get* the value from the HeatSensorValue property with a `getHeatSensorValue()` function.
 
-It's also possible to go overboard in the quest for clarity. Using too many words in one name may make things hard to read, so consider whether there's redundancy. For example, naming the function `getValue*From*HeatSensor()` might be going too far, since the new name doesn't add any meaning. The name `getHeatSensorValue()` explains that the value comes from the heat sensor without the need for a comment.
+It's also possible to go overboard in the quest for clarity. Using too many words in one name may make things hard to read, so consider whether there's redundancy. For example, naming the function `getValueFromHeatSensor()` might be going too far, since the new name doesn't add any meaning. The name `getHeatSensorValue()` explains that the value comes from the heat sensor without the need for a comment.
 
 On the other hand, there's a limit to how much information an identifier can contain without becoming hard to read. One recommendation is to make sure that the function fits comfortably into any line of code where it might be used. In order to do that, aim for five words or less. If you need to be more specific, try to keep it as short as possible, while being as clear as possible.
 
