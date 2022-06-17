@@ -69,7 +69,7 @@ However, some comments *can* and should be avoided. See comments that only serve
 
 An identifier is a way. Identifiers are used for namespaces, classes, functions and variables, and much more. Don't just use these names as a way of telling things apart. Consider identifiers as a way of communicating intent.
 
-For example, imagine a function used to **retrieve a value from a heat sensor**. Since the function is intended for checking heat level, **the function is called `cH()` for *Check Heat***. A comment above the function explains the purpose of cH():
+Imagine a function used to **retrieve a value from a heat sensor**. Since the function is intended for checking heat level, **the function is called `cH()` for *Check Heat***. A comment above the function explains the purpose of cH():
 
 ```js
 // This function gets a value from the heat sensor.
@@ -88,7 +88,7 @@ Of course, **a lot of naming comes down to code conventions and what your team h
 
 It's also possible to go overboard in the quest for clarity. Using too many words in one name may make things hard to read, so consider whether there's redundancy. For example, naming the function `getValueFromHeatSensor()` might be going too far, since the new name doesn't add any meaning. The name `getHeatSensorValue()` explains that the value comes from the heat sensor without the need for a comment.
 
-On the other hand, there's a limit to how much information an identifier can contain without becoming hard to read. One recommendation is to make sure that the function fits comfortably into any line of code where it might be used. In order to do that, aim for five words or less. If you need to be more specific, try to keep it as short as possible, while being as clear as possible.
+There's a limit to how much information an identifier can contain without becoming hard to read. One recommendation is to make sure that the function fits comfortably into any line of code where it might be used. In order to do that, aim for five words or less. If you need to be more specific, try to keep it as short as possible, while being as clear as possible.
 
 > Writer's note: The same rules should apply to anything you might want to name, for example classes, namespaces and variables. Attempts at accurate naming often reveal that something has too much responsibility.
 
