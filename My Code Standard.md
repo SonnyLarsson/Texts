@@ -24,12 +24,12 @@ This document doesn't go into ideas like SOLID or clean code (but, it does share
 
 Here are some common strategies for writing better, more self-explanatory code:
 
-* comment usage
-* clear identifiers
-* simpler functions
-* simpler objects
-* organizing code
-* variables instead of comments
+* Comment usage
+* Clear identifiers
+* Simpler functions
+* Simpler objects
+* Organized code
+* Variables instead of comments
 
 <br>
 
@@ -186,13 +186,18 @@ It's a good idea to consider why this is an object, and not just a simple value.
 
 Sometimes, an object contains properties or functions that don't belong. Items that don't belong in one object might be better placed somewhere else, or they might be unnecessary.  
 
-Let's say there's a class representing a temperature gauge. There's a class object that contains the following:
+Let's say there's a class representing a temperature gauge. In that class, there's a class object that contains the following values:
+```js
+{
+	sessionId: sessionIdGuid,
+	userId: userIdGuid,
+	minimumTemperature: -30,
+	maximumTemperature: 200,
+	currentTemperature: 47
+}
+```
 
-* session ID
-* user ID
-* minimum temperature
-* maximum temperature
-* current temperatur
+<br>
 
 In this scenario, all values are allocated, and used by related functions:
 
@@ -210,15 +215,17 @@ The values are used for three different purposes:
 
 Unless there's good reason to keep all these values in one object **it's a good idea isolate values that aren't related**.
 
-Imagine that session ID and user ID belong together in one object. Call that the authorization object. It will be used as the gauge first loads.
+The session ID and user ID fit together in one object. Call that the authorization object. It will be used as the gauge first loads.
 
 The maximum and minimum temperatures are also related. They both help determine how the gauge should be drawn. Therefore, these two temperatures end up in a scale object.
 
-Lastly, the current temperature is just one value from a temperature sensor. In this case it turns out that there's no need for this value to belong to an object at all. The current temperature is set to a class property.
+Lastly, the current temperature is just one value from a temperature sensor. In this case, it turns out that there's no need for this value to belong to an object at all. The current temperature is set to a class property.
 
-There are now two separate objects and one value—three separate items. Each item has its own relatively narrow purpose. There's an object for authorization, one object for setting the scale, and one value used to determine what to show on the gauge, and when to re-render the gauge. Objects with a narrow purpose are easier to understand than large, multi-purpose objects.
+There are now two separate objects and one value—three separate items. Each item has its own relatively narrow purpose. There's an object for authorization, one object for setting the scale, and one value used to determine what to show on the gauge, and when to re-render the gauge. These objects with a narrow purpose are easier to understand than large, multi-purpose objects.
 
 > Writer's note: In some languages an added benefit to splitting objects up is better memory management or less updates. If one value changes in an object, you may need to retrieve and possibly rewrite the whole object. Likewise, in some languages, updates to state objects trigger unwanted renders. Ideally, changing one value shouldn't require touching unrelated values.
+>
+> Objects can be more complicated than the javaScript-like objects described above. There could be a great deal of logic included in an object, and it's a good idea to also isolate other unrelated aspects of an object.
 
 <br>
 
@@ -235,11 +242,11 @@ Do the following when working with objects:
 
 <br>
 
-## Organizing code
+## Organized code
 
-In most projects, code is divided into more than one files. Each file contains a smaller unit of code. For example, files may hold name spaces, classes or functions. The exact content of a file can vary depending on code standards and practices, individual tastes and many other things.
+In most projects, code is divided into more than one file. Each file contains a smaller unit of code. For example, files may hold name spaces, classes or functions. The exact content of a file can vary depending on code standards and practices, individual tastes and many other things.
 
-There are benefits to having each of the files contain one unit of code. For example, a common practice in object based languages is to put each class into its own file. Classes in separate files become easier to find without the use of the search function in an IDE, compared to where several classes are grouped into files. It is good practice to identify which units of code belong in their own files, and to consistently place such units into their own files.
+A common practice in object based languages is to put each class into its own file. This is because of benefits to having each of the files contain one unit of code. For instance, classes in separate files become easier to find without the use of the search function in an IDE, compared to where several classes are grouped into files. It is good practice to identify which units of code belong in their own files, and to consistently place such units into their own files.
 
 The following list contains units of code that are usually organized into their own files:
 
@@ -255,7 +262,7 @@ However, the items in the list tend to be organized into their own files for a f
 * There is usually more than one such unit in a project (sometimes, one name space covers the entire project).
 * It is common practice to organize code this way.
 
-The size of a file is important for the same reason the length of a text matters. That is, the more you have to read, the more you have to remember and understand. Organize code into smaller files to make those files easier to read through and maintain.
+The size of a file is important for the same reason the length of a text matters. That is, the more you have to read, the more you have to remember and understand. In other words, organize code into smaller files to make those files easier to read through and maintain.
 
 However, you might wonder why it matters how the code is organized; all the code is still there. Well, usually, a programmer doesn't have to consider the entire code base to solve one problem. When code is organized into smaller pieces, solving specific problems becomes easier than in a project where everything is tightly bound together.
 
@@ -343,8 +350,34 @@ Use appropriately named variables to eliminate unexplained values.
 
 <br>
 
+## Summary
+
+Comment usage:
+Use comments that fill a purpose other that just to serve as documentation. Avoid comments that can be replaced by changing identifiers in your code or refactoring code.
+
+Clear identifiers:
+Use identifiers—names—that clearly state what your functions and other parts of your code does. But avoid overly long identfiers.
+
+Simpler functions:
+Split large functions up into smaller functions. Lower level functions should have one purpose, while higher level functions should describe flows by calling other functions, and letting those functions perform tasks.
+
+Simpler objects:
+Objects should contains values that are related to one another. Objects holding values with unrelated values should be broken up.
+
+Organizing code:
+Break code up into smaller units and files. Isolate functionality into separate files. If functionality is placed in a separate file, that functionality can be shared between unrelated classes.
+
+Variables instead of comments:
+Use variables with names that explain purposes to hold magic numbers and other hard-coded values. An appropriately named variable can replace comments and be shared between functions. 
+
+<br>
+
+---
+
+<br>
+
 ## Final words
 
-This document describes part of an approach to writing code that is easy to maintain and share. The basic concept is centered around the idea that code should explain itself to some extent. Ideally, a programmer should be able to read code and understand how it flows and functions without additional documentation.
+This document describes an approach to writing code that is easy to maintain and share. The basic concept is centered around the idea that code should explain itself to some extent. Ideally, a programmer should be able to read code and understand how it flows and functions without additional documentation.
 
 Of course, it takes more than just following a few guidelines to write truly great code. In the end, it also comes down to experience, following best practices for a particular language, and more. These few guidelines won't solve all your problems, but I hope they will provide some inspiration.
