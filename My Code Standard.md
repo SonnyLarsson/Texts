@@ -67,7 +67,7 @@ However, some comments *can* and should be avoided. See comments that only serve
 
 ## Clear identifiers
 
-An identifier is a way. Identifiers are used for namespaces, classes, functions and variables, and much more. Don't just use these names as a way of telling things apart. Consider identifiers as a way of communicating intent.
+For the purposes of this document, an identifier is a name. Identifiers are used for namespaces, classes, functions and variables, and much more. Don't just use these names as a way of telling things apart. Consider identifiers as a way of communicating intent.
 
 Imagine a function used to **retrieve a value from a heat sensor**. Since the function is intended for checking heat level, **the function is called `cH()` for *Check Heat***. A comment above the function explains the purpose of cH():
 
