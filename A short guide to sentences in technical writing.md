@@ -210,7 +210,7 @@ The following is a list of adverbs that change the meaning of a verb:
 * not
 * then
 
-These adverbs inform the reader that something shouldn't be done, or that it should be done in combination with another action. Adverbs that negate or combine actions are quantifiable.  these adverbs to clarify actions.
+These adverbs inform the reader that something shouldn't be done, or that it should be done in combination with another action. Adverbs that negate or combine actions are quantifiable. Use these adverbs to explain actions.
 
 The following is a list of adverbs that add to the meaning of a verb:
 
