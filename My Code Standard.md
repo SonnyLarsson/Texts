@@ -2,7 +2,7 @@
 
 This document is a summary of my own guidelines for writing code. I've attempted to create a language-agnostic code standard, suitable for most languages I've worked with. 
 
-However, you may find that it needs a few tweaks or changes to work for the specific language you are working with. For instance, there are languages where having many objects or functions is costly, and in such cases I can only refer to whatever the best practice is for those specific languages.
+You may find that this code standard needs a few tweaks or changes to work for the specific language you are working with. For instance, there are languages where having many objects or functions is costly, and in such cases I can only refer to whatever the best practice is for those specific languages.
 
 The focus of these guidelines is clarity and maintainability. Sometimes code has to be complicated, but it doesn't have to be hard to read. Be mindful about leaving clear code behind; even if you know the code by heart now, six months down the line it might be a nightmare to come back to. So, write code that is easy to follow, to make your life easier.
 
