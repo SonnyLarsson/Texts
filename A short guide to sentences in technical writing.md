@@ -137,7 +137,7 @@ It's important that readers understand the topic of a text. If parts of a text d
 
 ### Using clauses
 
-Sentences consist of clauses. A clause is a smaller unit of grammar that contain a subject and a verb. Independent clauses can make up a sentence on their own, while dependent clauses need to be part of a sentence. Clauses can add to the meaning of a sentence, but they also add complexity.
+Sentences consist of clauses. A clause is a smaller unit of grammar that contains a subject and a verb. Independent clauses can make up a sentence on their own, while dependent clauses need to be part of a sentence. Clauses can add to the meaning of a sentence, but they also add complexity.
 
 Not every clause is necessary. Some clauses add content without helping readers understand a topic. For example, telling readers when something happens is only important if the reader needs to know how two events or tasks are ordered. Avoid clauses that add information that doesn't help the purpose of your text.
 
