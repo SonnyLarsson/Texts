@@ -82,9 +82,27 @@ number cH() {
 
 **First, consider if ch() is a good function name.** As a general rule, the answer should be **"no"**. Homebrewed abbreviations is generally a bad idea in writing, as they force readers to translate them into words, and the same applies to code.
 
-But, if the name of the function is descriptive, it's possible to **remove the need to write a comment**. One alternative is to remove the abbreviation and name the function `checkHeat()`. However, you can be more specific by calling it `checkHeatSensor()`. Now the name explains where the heat value is coming from. Then again, checkHeatSensor could refer to checking some other status, rather than the heat value. Renaming the function `checkHeatSensorValue()` explains that the function checks the value from the heat sensor.
+But, if the name of the function is descriptive, it's possible to **remove the need to write a comment**. One alternative is to remove the abbreviation and name the function `checkHeat()`. However, you can be more specific by calling it `checkHeatSensor()`. Now the name explains where the heat value is coming from. Then again, checkHeatSensor could refer to checking some other status, rather than the heat value. Renaming the function `checkHeatSensorValue()` explains that the function checks the value from the heat sensor:
 
-Of course, **a lot of naming comes down to code conventions and what your team has agreed on**. For example, if you're working with *getter* and *setter* functions, checkHeatSensor() could be turned into a `setHeatSensorValue()` that *sets* the value from the heat sensor to a `HeatSensorValue` *property*. Then, *get* the value from the HeatSensorValue property with a `getHeatSensorValue()` function.
+```js
+number checkHeatSensorValue() {
+   doSomeMagic();
+}
+```
+
+<br>
+
+Of course, **a lot of naming comes down to code conventions and what your team has agreed on**. For example, if you're working with *getter* and *setter* functions, checkHeatSensor() could be turned into a `setHeatSensorValue()` that *sets* the value from the heat sensor to a `HeatSensorValue` *property*. Then, *get* the value from the HeatSensorValue property with a `getHeatSensorValue()` function:
+
+```js
+void setHeatSensorValue(heatSensorValue) {
+   HeatSensorValue = heatSensorValue;
+}
+
+number setHeatSensorValue(heatSensorValue) {
+   return HeatSensorValue;
+}
+```
 
 It's also possible to go overboard in the quest for clarity. Using too many words in one name may make things hard to read, so consider whether there's redundancy. For example, naming the function `getValueFromHeatSensor()` might be going too far, since the new name doesn't add any meaning. The name `getHeatSensorValue()` explains that the value comes from the heat sensor without the need for a comment.
 
@@ -221,7 +239,25 @@ The maximum and minimum temperatures are also related. They both help determine 
 
 Lastly, the current temperature is just one value from a temperature sensor. In this case, it turns out that there's no need for this value to belong to an object at all. The current temperature is set to a class property.
 
-There are now two separate objects and one value—three separate items. Each item has its own relatively narrow purpose. There's an object for authorization, one object for setting the scale, and one value used to determine what to show on the gauge, and when to re-render the gauge. These objects with a narrow purpose are easier to understand than large, multi-purpose objects.
+There are now two separate objects and one value—three separate items. Each item has its own relatively narrow purpose. There's an object for authorization, one object for setting the scale, and one value used to determine what to show on the gauge, and when to re-render the gauge. These objects with a narrow purpose are easier to understand than large, multi-purpose objects:
+
+```js
+object Authorization = {
+	sessionId: sessionIdGuid,
+	userId: userIdGuid
+}
+
+object Scale = {
+	minimumTemperature: -30,
+	maximumTemperature: 200,
+	
+}
+
+property CurrentTemperature = 47;
+
+```
+
+<br>
 
 > Writer's note: In some languages an added benefit to splitting objects up is better memory management or less updates. If one value changes in an object, you may need to retrieve and possibly rewrite the whole object. Likewise, in some languages, updates to state objects trigger unwanted renders. Ideally, changing one value shouldn't require touching unrelated values.
 >
