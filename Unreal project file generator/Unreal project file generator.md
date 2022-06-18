@@ -73,7 +73,7 @@ A script that maps directory paths.
 
 If all you need is a quick way to generate files for one specific version, you can set your paths in config.bat.
 
-> Note: **⚠** If you want to be able to generate project files for more than one version of Unreal Engine, leave the config script untouched, and edit the **choose_unreal_version_to_generate** script instead. Read more about choose_unreal_version_to_generate [here](#chooseunrealversiontogenerate).
+> Note: **⚠** If you want to be able to generate project files for more than one version of Unreal Engine, leave the config script untouched, and edit the **choose_unreal_version_to_generate** script instead. Read more about choose_unreal_version_to_generate [here](#choose_unreal_version_to_generate).
 
 <br>
 
