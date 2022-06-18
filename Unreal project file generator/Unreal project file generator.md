@@ -24,7 +24,7 @@ The project_file_generator consists of three batch files. The scripts are suitab
 
 Our game development project had a problem...
 
-Our server setup ran a number of borrowed scripts for custom Unreal Engine project file generation, and each script had its own set of hardcoded paths and values. The complexity of the setup had reached a point where Unreal Engine updates, or moved code, required a fair bit of testing and editing. Small changes to the GitlabRunner environment would need several edits, and subsequent testing to make sure everything worked.
+Our server setup ran a number of borrowed scripts for custom Unreal Engine project file generation, and each script had its own set of hard coded paths and values. The complexity of the setup had reached a point where Unreal Engine updates, or moved code, required a fair bit of testing and editing. Small changes to the GitlabRunner environment would need several edits, and subsequent testing to make sure everything worked.
 
 Then, *someone* suggested that not only could we use variables for each value we kept repeating, but we could also share those variables between all files. And so, the **config** and **generate_unreal_files_vscode** scripts were written, as a proof of concept. This proof of concept turned out so well that we'd soon replaced all our scripts with scripts depending on one **config** script.
 
@@ -98,7 +98,7 @@ Change the lines above into something like the following:
 * Set *unreal_path* to the location of the **buildtool** you want to use, in the install folder of the version of Unreal Engine you use.
 * Set *project_path* to the location of your **.uproject-file**, in the root folder for your local game files.
 
-Another option is to us environment variables, and leave the config script as is:
+Another option is to use environment variables, and leave the config script as is:
 
 * Set *UNREAL_BUILDTOOL_PATH* to the location of the **buildtool** you want to use.
 * Set *UNREAL_PROJECT_PATH* to the location of your **.uproject-file**.
@@ -237,7 +237,7 @@ Here are three use cases for the scripts:
 
 ### Automated project file generation for a single version of Unreal Engine
 
-1. A tool like *GitLabRunner* runs **generate_unreal_files_vscode.bat**.
+1. A tool like *GitlabRunner* runs **generate_unreal_files_vscode.bat**.
 2. **generate_unreal_files_vscode.bat** runs **config.bat**.
 3. **config.bat** sets values to the *unreal_path* and *project_path* variables.
 4. **generate_unreal_files_vscode.bat** triggers file generation through the Unreal Engine **buildtool**, using values from *unreal_path* and *project_path*.

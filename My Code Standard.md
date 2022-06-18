@@ -152,7 +152,7 @@ void checkHeat() {
 
 In the function above, most of the actual logic is hidden in lower level functions. This shows a clear flow in higher level functions, while the actual tasks code performs are organized into smaller functions with specific purposes. So, higher level functions determine how code flows, and lower level functions perform specific tasks.
 
-> Writer's note: Breaking function up into smaller functions can be drawn too far, and it's hard to say how far is too far. However, it should be safe to say that functions shouldn't have multiple purposes, or fulfil multiple tasks, without calling other functions. But the function that sets one value to one variable, and nothing else? Skip that!
+> Writer's note: Breaking function up into smaller functions can be drawn too far, and it's hard to say how far is too far. However, it should be safe to say that functions shouldn't have multiple purposes, or fulfill multiple tasks, without calling other functions. But the function that sets one value to one variable, and nothing else? Skip that!
 
 <br>
 
@@ -356,7 +356,7 @@ Comment usage:
 Use comments that fill a purpose other that just to serve as documentation. Avoid comments that can be replaced by changing identifiers in your code or refactoring code.
 
 Clear identifiers:
-Use identifiers—names—that clearly state what your functions and other parts of your code does. But avoid overly long identfiers.
+Use identifiers—names—that clearly state what your functions and other parts of your code does. But avoid overly long identifiers.
 
 Simpler functions:
 Split large functions up into smaller functions. Lower level functions should have one purpose, while higher level functions should describe flows by calling other functions, and letting those functions perform tasks.

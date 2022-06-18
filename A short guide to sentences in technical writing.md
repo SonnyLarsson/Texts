@@ -315,7 +315,7 @@ Transitions tie clauses, sentences or paragraphs together while showing a relati
 * and
 * furthermore
 * likewise
-* similarily
+* similarly
 
 **Contradiction**:
 
@@ -395,11 +395,11 @@ The following is a brief summary of the different sections of this guide:
 * Avoid *repetition*.
 * Use *synonyms* instead of repeating a word.
 * Avoid using different synonyms for one specific thing.
-* Use *pronouns* instead of repeating names or identfiers.
+* Use *pronouns* instead of repeating names or identifiers.
 * Avoid using pronouns before what they reference.
 * Avoid using ambiguous pronouns.
 * Avoid using pronouns more than five words away from a reference.
-* Use imperative sentences instead of repetively referring to readers as "you".
+* Use imperative sentences instead of repetitively referring to readers as "you".
 * Use *white space* to make text easier to read.
 * Break text up into *paragraphs*, and put white space after each paragraph.
 * Use *transitions* to tie sentences and paragraphs together.
@@ -412,4 +412,4 @@ The following is a brief summary of the different sections of this guide:
 
 ## Final words
 
-As stated at the start of this document, this guide isn't objective truth. For instance, you may find that other trategies work better for you, or that a specific style guide contradicts this guide. However, I hope you've gained some insight into how I see technical writing, and that I've provided you with some inspiration for your next project.
+As stated at the start of this document, this guide isn't objective truth. For instance, you may find that other strategies work better for you, or that a specific style guide contradicts this guide. However, I hope you've gained some insight into how I see technical writing, and that I've provided you with some inspiration for your next project.
