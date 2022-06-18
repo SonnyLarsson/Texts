@@ -327,7 +327,7 @@ number calculatePrice(number cost) {
 }
 ```
 
-The VAT value here is a *magic number*. Magic numbers not set to variables or constants. Magic numbers need to be explained.
+The VAT value here is a *magic number*. Magic numbers are not set to variables or constants. Magic numbers need to be explained.
 
 One way to explain a magic number is to add a comment:
 ```js
