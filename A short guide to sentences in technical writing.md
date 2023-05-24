@@ -115,7 +115,7 @@ Here are the same sentences, including the implicit *You*:
   2. *You* open your mind.
   3. *You* close it, again.
 
-For contrast, the following list contains imperative sentences using active voice **(not recommended)**:
+For contrast, the following list contains imperative sentences using passive voice **(not recommended)**:
 
   1. Let the sign be seen.
   2. Let your mind be opened.
